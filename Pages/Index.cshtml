@@ -1,0 +1,180 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "الرئيسية";
+}
+
+<section class="hero hero-carousel" aria-label="مقدمة الموقع">
+    <div class="hero-track">
+        <article class="hero-panel hero-panel-one" style="--hero-image: url('/images/hero-law-office.png')">
+            <div class="container-xl hero-grid hero-content">
+                <div class="hero-copy">
+                    <span class="eyebrow">مكتب نوف الزهراني للمحاماة والتوثيق</span>
+                    <h1>حلول قانونية موثوقة لحماية حقوقك وأعمالك.</h1>
+                    <p>
+                        نقدم خدمات قانونية وتوثيقية باحترافية عالية، تجمع بين وضوح
+                        المشورة، دقة المستندات، وسرية التعامل من أول تواصل حتى اكتمال الإجراء.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn-main" href="#who">من نحن</a>
+                        <a class="btn-ghost" asp-page="/Services">خدماتنا القانونية</a>
+                    </div>
+                    <div class="hero-tags" aria-label="مميزات المكتب">
+                        <span>استشارات قانونية</span>
+                        <span>توثيق معتمد</span>
+                        <span>متابعة بسرية</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="hero-panel hero-panel-two" style="--hero-image: url('/images/hero-consultation.png')">
+            <div class="container-xl hero-grid hero-content">
+                <div class="hero-copy">
+                    <span class="eyebrow">اطلب استشارة</span>
+                    <h1>ابدأ خطوتك القانونية بثقة ووضوح.</h1>
+                    <p>
+                        شارك تفاصيل طلبك، وسنساعدك في فهم المسار القانوني أو التوثيقي
+                        الأنسب لحالتك، مع عناية كاملة بالخصوصية والدقة.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn-main" href="https://wa.me/966556132288" target="_blank" rel="noreferrer">اطلب استشارة</a>
+                        <a class="btn-ghost" href="#contact">طرق التواصل</a>
+                    </div>
+                    <div class="hero-tags" aria-label="طلب استشارة">
+                        <span>عقود واتفاقيات</span>
+                        <span>مطالبات ونزاعات</span>
+                        <span>خدمات التوثيق</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="hero-carousel-dots" aria-hidden="true">
+        <span></span>
+        <span></span>
+    </div>
+</section>
+
+<section class="who-section" id="who">
+    <div class="container-xl who-editorial">
+        <div class="who-copy">
+            <div class="section-title-stack">
+                <span class="section-kicker">من نحن</span>
+            </div>
+            <div class="who-text-panel">
+                <p>
+                    في مكتب نوف الزهراني للمحاماة والتوثيق، نؤمن بأن القانون هو أساس
+                    العدالة وأداة لحماية الحقوق وبناء القرارات السليمة. نقدم خدمات
+                    قانونية وتوثيقية متخصصة تركز على الحلول العملية والنتائج الواضحة،
+                    مع الالتزام بأعلى معايير الاحترافية، السرية، والنزاهة.
+                </p>
+                <p>
+                    نتميز بمنهج مهني يجمع بين فهم احتياج العميل، دراسة الموقف القانوني
+                    بدقة، وصياغة مسار واضح يمكن الاعتماد عليه. نحرص على مواكبة
+                    المتطلبات النظامية وتقديم استشارات فعالة تساعد الأفراد والمنشآت
+                    على حماية مصالحهم وتحقيق أهدافهم بثقة.
+                </p>
+                <strong>مكتب نوف الزهراني للمحاماة والتوثيق - شريكك القانوني بثقة ووضوح.</strong>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="social-band" aria-label="تابعونا">
+    <div class="container-xl social-band-content">
+        <div>
+            <span>تابعونا</span>
+            <h2>آخر التحديثات القانونية عبر منصات التواصل.</h2>
+        </div>
+        <div class="social-links social-band-links">
+            <a href="https://www.tiktok.com/@@lawyer_nouf?_r=1&_t=ZS-96IlZGmlx9V" target="_blank" rel="noreferrer">TikTok</a>
+            <a href="https://x.com/nouflawyer24?s=21&t=MQb3t4Yo_7tAikv5nRRziA" target="_blank" rel="noreferrer">X</a>
+        </div>
+    </div>
+</section>
+
+<section class="section section-muted home-service-choice">
+    <div class="container-xl home-service-choice-grid">
+        <div class="home-service-copy">
+            <span class="section-kicker">الخدمات</span>
+            <h2>اختر نوع الخدمة التي تحتاجها.</h2>
+            <p>
+                تم تقسيم الخدمات إلى مسارين واضحين حتى تصل بسرعة إلى ما يناسب طلبك:
+                خدمات قانونية للاستشارات والعقود والنزاعات، وخدمات توثيق للوكالات
+                والإقرارات والعقود والإفراغات.
+            </p>
+            <a class="btn-main" asp-page="/Services">عرض جميع الخدمات</a>
+        </div>
+
+        <div class="home-service-choice-cards">
+            <a class="choice-card legal" href="/Services#legal-services">
+                <h3>خدمات قانونية</h3>
+                <p>استشارات، عقود، مطالبات، شركات، امتثال، ومتابعة إجراءات.</p>
+            </a>
+            <a class="choice-card notary" href="/Services#notary-services">
+                <h3>خدمات توثيق</h3>
+                <p>توثيق الوكالات، الإقرارات، العقود، الشركات، والإفراغات.</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="parallax-band" aria-label="شريكك القانوني">
+    <div class="container-xl parallax-content">
+        <span>شريكك القانوني في النجاح</span>
+        <h2>نستقبل استفساراتكم وطلباتكم بكل اهتمام وسرية تامة.</h2>
+        <a class="btn-main" href="https://wa.me/966556132288" target="_blank" rel="noreferrer">اطلب استشارة</a>
+    </div>
+</section>
+
+<section class="section home-blog-section">
+    <div class="container-xl">
+        <div class="home-blog-head">
+            <div>
+                <span class="section-kicker">المدونة</span>
+                <h2>إضاءات قانونية مختصرة قبل اتخاذ القرار.</h2>
+            </div>
+            <a class="btn-ghost" asp-page="/Blog">عرض كل المقالات</a>
+        </div>
+
+        <div class="blog-grid home-blog-grid">
+            <article class="blog-card blog-preview-card">
+                <div class="blog-preview-image" style="--blog-image: url('/images/hero-law-office.png')"></div>
+                <span>العقود</span>
+                <h2>متى تحتاج إلى مراجعة العقد قبل التوقيع؟</h2>
+                <p>نقاط أساسية تساعدك على فهم الالتزامات والمخاطر قبل اعتماد أي اتفاق.</p>
+                <a asp-page="/Blog">قراءة المزيد</a>
+            </article>
+            <article class="blog-card blog-preview-card featured-blog">
+                <div class="blog-preview-image" style="--blog-image: url('/images/consultation-banner.png')"></div>
+                <span>التوثيق</span>
+                <h2>ما الفرق بين الوكالة والإقرار؟</h2>
+                <p>توضيح مبسط لاختيار الإجراء التوثيقي المناسب حسب احتياجك.</p>
+                <a asp-page="/Blog">قراءة المزيد</a>
+            </article>
+            <article class="blog-card blog-preview-card">
+                <div class="blog-preview-image" style="--blog-image: url('/images/hero-about-office.png')"></div>
+                <span>الشركات</span>
+                <h2>نقاط قانونية مهمة قبل تأسيس الشركة.</h2>
+                <p>ترتيب الصلاحيات والعلاقات منذ البداية يحمي العمل ويقلل النزاعات.</p>
+                <a asp-page="/Blog">قراءة المزيد</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <div class="container-xl contact-band">
+        <div>
+            <span class="section-kicker">ابدأ الآن</span>
+            <h2>أرسل تفاصيل طلبك وسيتم الرد عليك.</h2>
+            <p>يمكن التواصل مباشرة عبر البريد الإلكتروني أو واتساب، أو زيارة موقع المكتب في الدريهمية، الرياض.</p>
+        </div>
+        <div class="contact-actions">
+            <a class="btn-main" href="mailto:noufalzahrani9@icloud.com">إرسال بريد</a>
+            <a class="btn-main btn-alt" href="https://wa.me/966556132288" target="_blank" rel="noreferrer">واتساب</a>
+            <a class="btn-main btn-alt" href="https://www.google.com/maps/place/%D9%85%D9%83%D8%AA%D8%A8+%D9%86%D9%88%D9%81+%D8%A7%D9%84%D8%B2%D9%87%D8%B1%D8%A7%D9%86%D9%8A+%D9%84%D9%84%D9%85%D8%AD%D8%A7%D9%85%D8%A7%D8%A9+%D9%88%D8%A7%D9%84%D8%AA%D9%88%D8%AB%D9%8A%D9%82%E2%80%AD/@@24.5946628,46.6927537,17z/data=!3m1!4b1!4m6!3m5!1s0x3e2f0f40b6ec3bd7:0x5b634521ddb64174!8m2!3d24.5946628!4d46.6953286!16s%2Fg%2F11x33ftngj?entry=ttu" target="_blank" rel="noreferrer">الموقع</a>
+        </div>
+    </div>
+</section>

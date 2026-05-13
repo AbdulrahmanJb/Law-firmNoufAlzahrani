@@ -1,0 +1,17 @@
+@page
+@model ErrorModel
+@{
+    ViewData["Title"] = "خطأ";
+}
+
+<section class="page-hero error-page">
+    <div class="container-xl">
+        <span class="eyebrow">تعذر تحميل الصفحة</span>
+        <h1>حدث خطأ غير متوقع.</h1>
+        <p>يمكنك العودة إلى الصفحة الرئيسية أو التواصل معنا إذا استمرت المشكلة.</p>
+        <div class="hero-actions">
+            <a class="btn-main" asp-page="/Index">الصفحة الرئيسية</a>
+            <a class="btn-ghost" href="https://wa.me/966556132288" target="_blank" rel="noreferrer">تواصل معنا</a>
+        </div>
+    </div>
+</section>
