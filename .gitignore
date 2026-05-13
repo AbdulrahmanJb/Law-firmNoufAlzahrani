@@ -2,6 +2,8 @@ bin/
 obj/
 .vs/
 publish/
+deploy-min/
 *.zip
+*-smoke-*.log
 *.user
 *.suo
